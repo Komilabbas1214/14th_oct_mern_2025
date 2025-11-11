@@ -1,0 +1,39 @@
+	
+	
+		/*
+			css style comment
+		*/
+		
+	
+		h1 { color:lightGray;background-color:black;text-align:right }
+		h2,h3 { color:white;background-color:red;text-align:right }
+		
+		
+		/* custome .class style comment*/
+		.kirti { color:orange;background-color:purple;text-align:center}
+		
+		.upper { text-transform:uppercase }
+		
+		.line { text-decoration: overline}
+		
+		/* custome #id style comment*/
+		#raj { color:yellow;background-color:red;text-align:center}
+	
+	
+		h5.abbas{
+			color:white;background-color:black;text-align:left
+		}
+		
+		
+		.header{
+			width:50%;
+			height:100px;
+			background-color:orange;
+		}
+		
+		
+		.header h1{
+			text-transform:uppercase;
+			background-color:red;
+		}
+	
