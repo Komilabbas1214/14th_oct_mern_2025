@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+/* Multiple background-image */
+#example1 {
+  background-image:url(star.png),url(moon.png),url(background_images.jpg);
+  background-position:500px 50px,50px 100px,left top;
+  background-repeat:no-repeat,no-repeat,repeat;
+  background-size:70px 70px,100px 100px,100% 100%;
+
+  border:5px solid red;
+  padding:15px;
+}
+
+  
+/* shorthand Property*/
+
+#example2 {
+  background:url(star.png) 500px 50px no-repeat,url(moon.png) 50px 100px no-repeat,url(background_images.jpg) left top repeat;
+  background-size:70px 70px,100px 100px,100% 100%;
+  border:5px solid red;
+  padding:15px;
+  
+}  
+  
+</style>
+</head>
+<body>
+
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</hr>
+
+<div id="example2">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
