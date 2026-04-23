@@ -1,0 +1,7 @@
+.big_blue {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 26, 255);
+    float: left;
+    color: rgb(13, 202, 44);
+}
