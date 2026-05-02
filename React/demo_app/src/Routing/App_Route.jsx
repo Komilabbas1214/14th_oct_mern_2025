@@ -26,9 +26,9 @@ function App_Route() {
     <div>
        <BrowserRouter>
             <Routes>
-                <Route path="/" element={<><Header/><Index/><Footer/></>}></Route>
-                <Route path="/about" element={<><Header/><About/><Footer/></>}></Route>
-                <Route path="/blog" element={<><Header/><Blog/><Footer/></>}></Route>
+                <Route path="/" element={<><Header title="Home Page" /><Index/><Footer/></>}></Route>
+                <Route path="/about" element={<><Header title="About Page"/><About/><Footer/></>}></Route>
+                <Route path="/blog" element={<><Header title="Blog Page"/><Blog/><Footer/></>}></Route>
                 <Route path="/contact" element={<Contact/>}></Route>
             </Routes>
        </BrowserRouter>

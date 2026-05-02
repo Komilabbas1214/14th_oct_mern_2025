@@ -9,6 +9,8 @@ import Module_css1 from './Module_css/Module_css1'
 import Module_css2 from './Module_css/Module_css2'
 import Props_main from './Props/Props_main'
 import App_Route from './Routing/App_Route'
+import State_func from './State/Func_state/State_func'
+import State_class from './State/Class_state/State_class'
 
 function App() {
   return (
@@ -24,9 +26,11 @@ function App() {
 			//<Module_css1/>
 			
 			//<Props_main/>
+			//<App_Route/>
+
+			//<State_class/>
 		}
-		
-		<App_Route/>
+		<State_func/>
 		
 	</div>
   )
