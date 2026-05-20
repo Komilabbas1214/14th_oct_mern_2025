@@ -1,4 +1,7 @@
 /*
+
+https://styled-components.com/ 
+
 CSS for the <Component> Age
 Styling your way with speed, strong typing, and flexibility.
 GitHub
@@ -11,12 +14,9 @@ styles – using components as a low-level styling construct could not be easier
 
 Install : npm install styled-components
 
-
 use Import : import styled from 'styled-components'
 
-
 create : 
-
 const Mybutton=styled.h1`
   normal-css
 `;

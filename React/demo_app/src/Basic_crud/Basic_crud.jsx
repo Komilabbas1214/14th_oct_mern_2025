@@ -24,6 +24,8 @@ function Basic_crud() {
         return false;
     }
 
+    //====================================
+
     const deleteHandel=(id)=>{
 
         const filterdata=data.filter((value,index,arr)=>{
@@ -32,6 +34,7 @@ function Basic_crud() {
         setData(filterdata);
     }
 
+   // ============================================
     return (
         <div>
             <div className="p-5 bg-primary text-white text-center">

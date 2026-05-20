@@ -14,6 +14,7 @@ import State_class from './State/Class_state/State_class'
 import Class_life from './Lifecycle/class/Class_life'
 import MUI from './MUI/MUI'
 import Basic_crud from './Basic_crud/Basic_crud'
+import Styled_component from './Styled_component/Styled_component'
 
 function App() {
   return (
@@ -36,9 +37,12 @@ function App() {
 
 			///<Class_life/>
 			//<MUI/>
+
+			//<Basic_crud/>
+			<Styled_component/>
 		}
 		
-		<Basic_crud/>
+		
 		
 	</div>
   )
