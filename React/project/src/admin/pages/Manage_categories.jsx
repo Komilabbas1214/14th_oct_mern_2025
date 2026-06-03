@@ -1,0 +1,66 @@
+import React, { useEffect, useState } from 'react'
+
+function Manage_categories() {
+
+    const [data, setData] = useState([]);
+
+    // auto call when component load/birth
+    useEffect(() => {
+        fetch('http://localhost:3000/categories')
+            .then((response) => response.json())
+            .then((object) => {
+                console.log(object);
+                setData(object);
+            });
+    }, []);
+
+    return (
+        <div className="az-content pd-y-20 pd-lg-y-30 pd-xl-y-40">
+            <div className="container">
+
+                <div className="az-content-body pd-lg-l-40 d-flex flex-column">
+
+                    <h2 className="az-content-title">Manage Categories</h2>
+                    <div className="az-content-label mg-b-5">Add/Upd/Del Data</div>
+                    <div className="table-responsive">
+                        <table className="table mg-b-0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Image</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    data.map((value, index, arr) => {
+                                        return (
+                                            <tr>
+                                                <td scope="row">{value.id}</td>
+                                                <td>{value.name}</td>
+                                                <td><img src={value.image} width="50px" alt="" /></td>
+                                                <td>
+                                                    <button className='btn btn-primary me-1'>Edit</button>
+                                                    <button className='btn btn-danger'>Delete</button>
+                                                </td>
+                                            </tr>
+                                        )
+                                    })
+                                }
+
+
+
+                            </tbody>
+                        </table>
+                    </div>{/* table-responsive */}
+
+
+                </div>{/* az-content-body */}
+            </div>{/* container */}
+        </div>
+
+    )
+}
+
+export default Manage_categories

@@ -3,212 +3,175 @@ import React from 'react'
 function About() {
     return (
         <div>
-            {/* ***** Main Banner Area Start ***** */}
-            <div className="page-heading about-page-heading" id="top">
+            <div className="modal fade bg-white" id="templatemo_search" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg" role="document">
+                    <div className="w-100 pt-1 mb-5 text-right">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                    </div>
+                    <form action method="get" className="modal-content modal-body border-0 p-0">
+                        <div className="input-group mb-2">
+                            <input type="text" className="form-control" id="inputModalSearch" name="q" placeholder="Search ..." />
+                            <button type="submit" className="input-group-text bg-success text-light">
+                                <i className="fa fa-fw fa-search text-white" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section className="bg-success py-5">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="inner-content">
-                                <h2>About Our Company</h2>
-                                <span>Awesome, clean &amp; creative HTML5 Template</span>
-                            </div>
+                    <div className="row align-items-center py-5">
+                        <div className="col-md-8 text-white">
+                            <h1>About Us</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div className="col-md-4">
+                            <img src="website/assets/img/about-hero.svg" alt="About Hero" />
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* ***** Main Banner Area End ***** */}
-            {/* ***** About Area Starts ***** */}
-            <div className="about-us">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="left-image">
-                                <img src="assets/images/about-left-image.jpg" alt />
-                            </div>
+            </section>
+            {/* Close Banner */}
+            {/* Start Section */}
+            <section className="container py-5">
+                <div className="row text-center pt-5 pb-3">
+                    <div className="col-lg-6 m-auto">
+                        <h1 className="h1">Our Services</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-6 col-lg-3 pb-5">
+                        <div className="h-100 py-5 services-icon-wap shadow">
+                            <div className="h1 text-success text-center"><i className="fa fa-truck fa-lg" /></div>
+                            <h2 className="h5 mt-4 text-center">Delivery Services</h2>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="right-content">
-                                <h4>About Us &amp; Our Skills</h4>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</span>
-                                <div className="quote">
-                                    <i className="fa fa-quote-left" /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod kon tempor incididunt ut labore.</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                                <ul>
-                                    <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                                    <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                                    <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                                    <li><a href="#"><i className="fa fa-behance" /></a></li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div className="col-md-6 col-lg-3 pb-5">
+                        <div className="h-100 py-5 services-icon-wap shadow">
+                            <div className="h1 text-success text-center"><i className="fas fa-exchange-alt" /></div>
+                            <h2 className="h5 mt-4 text-center">Shipping &amp; Return</h2>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-lg-3 pb-5">
+                        <div className="h-100 py-5 services-icon-wap shadow">
+                            <div className="h1 text-success text-center"><i className="fa fa-percent" /></div>
+                            <h2 className="h5 mt-4 text-center">Promotion</h2>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-lg-3 pb-5">
+                        <div className="h-100 py-5 services-icon-wap shadow">
+                            <div className="h1 text-success text-center"><i className="fa fa-user" /></div>
+                            <h2 className="h5 mt-4 text-center">24 Hours Service</h2>
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* ***** About Area Ends ***** */}
-            {/* ***** Our Team Area Starts ***** */}
-            <section className="our-team">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-heading">
-                                <h2>Our Amazing Team</h2>
-                                <span>Details to details is what makes Hexashop different from the other themes.</span>
-                            </div>
+            </section>
+            {/* End Section */}
+            {/* Start Brands */}
+            <section className="bg-light py-5">
+                <div className="container my-4">
+                    <div className="row text-center py-3">
+                        <div className="col-lg-6 m-auto">
+                            <h1 className="h1">Our Brands</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                Lorem ipsum dolor sit amet.
+                            </p>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="team-item">
-                                <div className="thumb">
-                                    <div className="hover-effect">
-                                        <div className="inner-content">
-                                            <ul>
-                                                <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                                                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                                                <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                                                <li><a href="#"><i className="fa fa-behance" /></a></li>
-                                            </ul>
+                        <div className="col-lg-9 m-auto tempaltemo-carousel">
+                            <div className="row d-flex flex-row">
+                                {/*Controls*/}
+                                <div className="col-1 align-self-center">
+                                    <a className="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                                        <i className="text-light fas fa-chevron-left" />
+                                    </a>
+                                </div>
+                                {/*End Controls*/}
+                                {/*Carousel Wrapper*/}
+                                <div className="col">
+                                    <div className="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
+                                        {/*Slides*/}
+                                        <div className="carousel-inner product-links-wap" role="listbox">
+                                            {/*First slide*/}
+                                            <div className="carousel-item active">
+                                                <div className="row">
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_01.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_02.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_03.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_04.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*End First slide*/}
+                                            {/*Second slide*/}
+                                            <div className="carousel-item">
+                                                <div className="row">
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_01.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_02.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_03.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_04.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*End Second slide*/}
+                                            {/*Third slide*/}
+                                            <div className="carousel-item">
+                                                <div className="row">
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_01.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_02.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_03.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                    <div className="col-3 p-md-5">
+                                                        <a href="#"><img className="img-fluid brand-img" src="website/assets/img/brand_04.png" alt="Brand Logo" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*End Third slide*/}
                                         </div>
+                                        {/*End Slides*/}
                                     </div>
-                                    <img src="assets/images/team-member-01.jpg" />
                                 </div>
-                                <div className="down-content">
-                                    <h4>Ragnar Lodbrok</h4>
-                                    <span>Product Caretaker</span>
+                                {/*End Carousel Wrapper*/}
+                                {/*Controls*/}
+                                <div className="col-1 align-self-center">
+                                    <a className="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                                        <i className="text-light fas fa-chevron-right" />
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="team-item">
-                                <div className="thumb">
-                                    <div className="hover-effect">
-                                        <div className="inner-content">
-                                            <ul>
-                                                <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                                                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                                                <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                                                <li><a href="#"><i className="fa fa-behance" /></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/team-member-02.jpg" />
-                                </div>
-                                <div className="down-content">
-                                    <h4>Ragnar Lodbrok</h4>
-                                    <span>Product Caretaker</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="team-item">
-                                <div className="thumb">
-                                    <div className="hover-effect">
-                                        <div className="inner-content">
-                                            <ul>
-                                                <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                                                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                                                <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                                                <li><a href="#"><i className="fa fa-behance" /></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/team-member-03.jpg" />
-                                </div>
-                                <div className="down-content">
-                                    <h4>Ragnar Lodbrok</h4>
-                                    <span>Product Caretaker</span>
-                                </div>
+                                {/*End Controls*/}
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/* ***** Our Team Area Ends ***** */}
-            {/* ***** Services Area Starts ***** */}
-            <section className="our-services">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-heading">
-                                <h2>Our Services</h2>
-                                <span>Details to details is what makes Hexashop different from the other themes.</span>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="service-item">
-                                <h4>Synther Vaporware</h4>
-                                <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                                <img src="assets/images/service-01.jpg" alt />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="service-item">
-                                <h4>Locavore Squidward</h4>
-                                <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                                <img src="assets/images/service-02.jpg" alt />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="service-item">
-                                <h4>Health Gothfam</h4>
-                                <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                                <img src="assets/images/service-03.jpg" alt />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* ***** Services Area Ends ***** */}
-            {/* ***** Subscribe Area Starts ***** */}
-            <div className="subscribe">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8">
-                            <div className="section-heading">
-                                <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-                                <span>Details to details is what makes Hexashop different from the other themes.</span>
-                            </div>
-                            <form id="subscribe" action method="get">
-                                <div className="row">
-                                    <div className="col-lg-5">
-                                        <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Your Name" required />
-                                        </fieldset>
-                                    </div>
-                                    <div className="col-lg-5">
-                                        <fieldset>
-                                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required />
-                                        </fieldset>
-                                    </div>
-                                    <div className="col-lg-2">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" className="main-dark-button"><i className="fa fa-paper-plane" /></button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="row">
-                                <div className="col-6">
-                                    <ul>
-                                        <li>Store Location:<br /><span>Sunny Isles Beach, FL 33160, United States</span></li>
-                                        <li>Phone:<br /><span>010-020-0340</span></li>
-                                        <li>Office Location:<br /><span>North Miami Beach</span></li>
-                                    </ul>
-                                </div>
-                                <div className="col-6">
-                                    <ul>
-                                        <li>Work Hours:<br /><span>07:30 AM - 9:30 PM Daily</span></li>
-                                        <li>Email:<br /><span>info@company.com</span></li>
-                                        <li>Social Media:<br /><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* ***** Subscribe Area Ends ***** */}
+            {/*End Brands*/}
         </div>
 
     )
